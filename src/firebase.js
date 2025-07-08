@@ -4,13 +4,13 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFunctions } from "firebase/functions";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDCrvnyqX4BZVhqRP6m3SaglE3EYKLWTT8",
-  authDomain: "slot-sync-ai.firebaseapp.com",
-  projectId: "slot-sync-ai",
-  storageBucket: "slot-sync-ai.firebasestorage.app",
-  messagingSenderId: "986193658136",
-  appId: "1:986193658136:web:dbbdb55ce285b1e5fd1e6d",
-  measurementId: "G-DWQKNQD9K5"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
