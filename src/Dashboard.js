@@ -206,8 +206,8 @@ function Dashboard({ user }) {
                 </p>
                 <p><em>Reason:</em> {req.reason}</p>
                 <div className="button-group">
-                  <button onClick={() => approveRequest(req)} className="approve-btn">✅ Approve</button>
-                  <button onClick={() => rejectRequest(req)} className="reject-btn">❌ Reject</button>
+                  <button onClick={() => approveRequest(req)} className="approve-btn">Approve</button>
+                  <button onClick={() => rejectRequest(req)} className="reject-btn">Reject</button>
                 </div>
               </div>
             ))}
